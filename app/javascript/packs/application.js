@@ -17,7 +17,6 @@ require ("packs/material/plugins/moment.min")
 require ("packs/material/plugins/nouislider.min")
 require ("packs/material/material-kit.min")
 require ("packs/material/material-kit")
-require ("packs/material/jquery-smooth")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
