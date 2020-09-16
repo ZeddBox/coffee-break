@@ -47,15 +47,15 @@
 ! function(e) {
   "use strict";
   if ("function" == typeof define && define.amd) define(["jquery", "moment"], e);
-  else if ("object" == typeof exports) module.exports = e(require("jquery"), require("moment"));
+  else if ("object" == typeof exports) module.exports = e(require("jquery.min"), require("moment.min"));
   else {
-    if ("undefined" == typeof jQuery) throw "bootstrap-datetimepicker requires jQuery to be loaded first";
-    if ("undefined" == typeof moment) throw "bootstrap-datetimepicker requires Moment.js to be loaded first";
+    if ("undefined" == typeof jQuery) throw "bootstrap-datetimepicker requires jquery.min.js to be loaded first";
+    if ("undefined" == typeof moment) throw "bootstrap-datetimepicker requires Moment.min.js to be loaded first";
     e(jQuery, moment)
   }
 }(function(e, t) {
   "use strict";
-  if (!t) throw new Error("bootstrap-datetimepicker requires Moment.js to be loaded first");
+  if (!t) throw new Error("bootstrap-datetimepicker requires Moment.min.js to be loaded first");
   var n = function(n, a) {
     var r, i, o, s, d, l, p, c = {},
       u = !0,
