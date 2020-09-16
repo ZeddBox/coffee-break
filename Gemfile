@@ -61,6 +61,4 @@ gem 'cloudinary'
 gem 'font-awesome-rails'
 gem 'font_awesome5_rails'
 gem 'friendly_id', '~> 5.2.4'
-gem 'mailjet'
-gem "jquery-rails"
-gem 'popper_js', '~> 1.12.9'
+# gem 'mailjet'
