@@ -22,7 +22,10 @@
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
+
+  <% if controller.controller_name != 'admin' && controller.controller_name != 'devise' %>
+    <%= render 'layouts/navbar' %>
+  <% end %>
     <%= render 'layouts/flash' %>
 
     <%= yield %>
