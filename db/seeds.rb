@@ -8,7 +8,7 @@
 User.destroy_all
 
 User.create(
-  nickname: "admin",
+  nickname: "R. Guinhut",
   email: "admincoffeebreak@yopmail.com",
   password: "123456",
   is_admin: true
