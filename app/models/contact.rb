@@ -6,6 +6,13 @@ class Contact < ApplicationRecord
 after_create :contact_email
 
 def contact_email
-  ContactMailer.contact_email().deliver_now
+  ContactMailer.contact_admin().deliver_now
+  ContactMailer.contact_user().deliver_now
 end
+
+REGEX_PATTERN = /^(.+)@(.+)$/ 
+def is_email_valid?
+    self.email =~REGEX_PATTERN
+end
+
 end

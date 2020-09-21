@@ -2,7 +2,7 @@
   <h2 class="text-center title" id="contact">Contactez moi</h2>
   <h4 class="text-center description">Si vous souhaitez plus de renseignements n'hésitez pas à me contacter. Voici mes coordonnées ou vous pouvez me laisser un message via ce site et je vous répondrai dans les plus brefs délais</h4>
   <div class="row mt-3 mx-4">
-    <div class="col-md-3 text-center ml-auto mr-auto border rounded">
+    <div class="col-md-3 text-center ml-auto mr-auto border shadow-sm mb-4 bg-light rounded">
       <h5 class="mt-5">Mes coordonnées</h5>
       <i class="fas fa-user-circle mt-4"></i>
       <p>Raphaël Guinhut</p>
@@ -20,13 +20,13 @@
             <div class="col-md-6">
               <div class="form-group bmd-form-group">  
                 <%= f.label :votre_nom, class: "bmd-label-floating" %></br>
-                <%= f.text_field  :name, required: true, class: "form-control" %></br>
+                <%= f.text_field  :name, required: true, class: "form-control success" %></br>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group bmd-form-group">  
               <%= f.label :votre_adresse_mail, class: "bmd-label-floating"  %></br>
-              <%= f.text_field :email, required: true, class: "form-control" %></br>
+              <%= f.text_field :email, required: true, class: "form-control form-control-success" %></br>
               </div>
             </div>
           </div>

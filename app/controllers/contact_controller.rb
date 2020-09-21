@@ -6,13 +6,15 @@ class ContactController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    respond_to do |format|
-      if @contact.save
-        format.html { redirect_to root_path, notice: 'Contact was successfully created'}
-        format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
-      else
-        format.html { redirect_to root_path, notice: 'Contact was not created'}
-        format.js   { flash.now[:error] = @message = "Message did not send." }
+    if @contact.is_email_valid? == nil
+      flash.now[:danger] = @message = "Le mail n'est pas valide"
+    else
+      respond_to do |format|
+        if @contact.save
+          format.js   { flash.now[:success] = @message = "Merci pour votre message, vous serez contacté très vite !" }
+        else
+          format.js   { flash.now[:error] = @message = "Le message n'a pas été envoyé désolé, contactez moi directement" }
+        end
       end
     end
   end
