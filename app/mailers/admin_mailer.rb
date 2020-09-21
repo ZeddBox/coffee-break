@@ -1,5 +1,5 @@
 class AdminMailer < ApplicationMailer
-  default from: 'raphael.coffeebreak@yopmail.com'
+  default from: 'raphael.coffeebreak@gmail.com'
   
   def welcome_email(user)
     #on récupère l'instance user pour ensuite pouvoir la passer à la view en @user
