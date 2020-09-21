@@ -16,6 +16,9 @@ ActiveRecord::Schema.define(version: 2020_09_18_135121) do
   enable_extension "plpgsql"
 
   create_table "contacts", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "name", null: false
+    t.text "message", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

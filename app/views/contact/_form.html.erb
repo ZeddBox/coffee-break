@@ -1,0 +1,45 @@
+<div class="section section-contacts">
+  <h2 class="text-center title" id="contact">Contactez moi</h2>
+  <h4 class="text-center description">Si vous souhaitez plus de renseignements n'hésitez pas à me contacter. Voici mes coordonnées ou vous pouvez me laisser un message via ce site et je vous répondrai dans les plus brefs délais</h4>
+  <div class="row mt-3 mx-4">
+    <div class="col-md-3 text-center ml-auto mr-auto border rounded">
+      <h5 class="mt-5">Mes coordonnées</h5>
+      <i class="fas fa-user-circle mt-4"></i>
+      <p>Raphaël Guinhut</p>
+      <i class="fas fa-mobile-alt mt-2"></i>
+      <p>06 11 22 33 44</p>
+      <i class="fas fa-at mt-2"></i>
+      <p>raphael.coffeebreak@gmail.com</p>
+    </div>
+    <div class="col-md-8 ml-auto mr-auto">
+      <div class="col-md-12 justify-content-center" id="flash-message">
+        <%= render 'flash' %>
+      </div>
+        <%= form_for @contact, url: contact_index_path, class:"contact-form", remote: true do |f| %>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group bmd-form-group">  
+                <%= f.label :votre_nom, class: "bmd-label-floating" %></br>
+                <%= f.text_field  :name, required: true, class: "form-control" %></br>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group bmd-form-group">  
+              <%= f.label :votre_adresse_mail, class: "bmd-label-floating"  %></br>
+              <%= f.text_field :email, required: true, class: "form-control" %></br>
+              </div>
+            </div>
+          </div>
+          <div class="form-group bmd-form-group">
+              <%= f.label :votre_message, class: "bmd-label-floating" %></br>
+              <%= f.text_area :message, rows: 2, cols: 30, required: true, class: "form-control"%></br>
+          </div>
+          <div class="row">
+            <div class="col-md-4 ml-auto mr-auto text-center">
+              <%= f.submit 'Envoyer un message', class: 'btn btn-success' %>
+            </div>
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>
