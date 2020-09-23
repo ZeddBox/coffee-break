@@ -4,10 +4,74 @@
 
 .background-image {
 
-  background-image: url('coffee-machine1.png');
+  // background-image: url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png');
+  background: -moz-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -webkit-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -webkit-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -o-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -ms-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
   width: 100%;
   position: fixed ;
   top: 0;
   right: 0;
   left: 0;
+}
+
+.website-title {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+}
+
+.website-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.card-info h5,
+.card-info p{
+  transition: transform .5s ease;
+}
+
+.card-info:hover h5,
+.card-info:hover p{
+  transform: scale(1.2);
+}
+
+.card-info {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card-info:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.logonone {
+  display: none
+}
+
+.logo {
+  display: inline;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-nav {
+  transition: 0.3s;
+  animation: bounce 0.7s ease infinite;
+}
+
+.logo-nav:hover {
+  animation: bounce 0.7s ease infinite;
 }

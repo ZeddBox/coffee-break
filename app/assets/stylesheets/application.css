@@ -14,6 +14,8 @@
  *= require_self
  *= require material/material-kit
  *= require home
+ *= require map
+ *= require navbar
  */
 
  
