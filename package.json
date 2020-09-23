@@ -6,11 +6,35 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "hover.css": "^2.3.2",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
     "case-sensitive-paths-webpack-plugin": "^2.3.0",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "description": "I'm working on a friend Website for his new activity. He will repair coffee machine of his clients (restaurant and else)",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeddBox/coffee-break.git"
+  },
+  "keywords": [
+    "coffee",
+    "break"
+  ],
+  "author": "ZedDv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZeddBox/coffee-break/issues"
+  },
+  "homepage": "https://github.com/ZeddBox/coffee-break#readme"
 }

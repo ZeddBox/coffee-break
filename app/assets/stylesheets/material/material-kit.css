@@ -14688,23 +14688,10 @@ textarea {
 
 .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
-  color: inherit;
+  color: #3e2216;
   padding: 0.9375rem;
   font-weight: 400;
   font-size: 12px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  line-height: 20px;
-}
-
-.nav-link-title {
-  position: relative;
-  color: inherit;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
-  padding-right: 0.9375rem;
-  font-weight: 400;
-  font-size: 24px;
   text-transform: uppercase;
   border-radius: 3px;
   line-height: 20px;
