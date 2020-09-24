@@ -14690,8 +14690,8 @@ textarea {
   position: relative;
   color: #3e2216;
   padding: 0.9375rem;
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 13px;
   text-transform: uppercase;
   border-radius: 3px;
   line-height: 20px;
@@ -17054,7 +17054,7 @@ footer .pull-center {
 .card.no-shadow .card-header-image,
 .card.no-shadow .card-header-image img {
   box-shadow: none !important;
-  
+
 }
 
 .card .card-body,

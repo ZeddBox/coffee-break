@@ -1,13 +1,13 @@
 <div class="section">
   <h2 class="text-center subtitle" id="contact">Contactez moi</h2>
-  <h5 class="text-center description">Si vous souhaitez plus de renseignements n'hésitez pas à me contacter. Voici mes coordonnées ou vous pouvez me laisser un message via ce site et je vous répondrai dans les plus brefs délais</h5>
+  <h5 class="text-center description">Vous trouverez ci-dessous mes coordonnées. Pour les tarifs et autres informations, veuillez m'adresser votre demande via ce formulaire, je reviendrais vers vous dans les meilleurs délais.</h5>
   <div class="row mt-5 mx-4">
-    <div class="col-md-4 text-center ml-auto mr-auto border shadow-sm mb-4 bg-light rounded card-info">
+    <div class="col-md-4 text-center ml-auto mr-auto border shadow-sm mb-4 rounded card-info coffee-bag-bg">
       <h5 class="mt-4">Mes coordonnées</h5>
       <i class="fas fa-user-circle mt-4"></i>
       <p>Raphaël Guinhut</p>
       <i class="fas fa-mobile-alt mt-2"></i>
-      <p>06 11 22 33 44</p>
+      <p>06 58 01 53 11</p>
       <i class="fas fa-at mt-2"></i>
       <p>raphael.coffeebreak@gmail.com</p>
     </div>
@@ -18,28 +18,42 @@
         <%= form_for @contact, url: contact_index_path, class:"contact-form", remote: true do |f| %>
           <div class="row">
             <div class="col-md-6">
-              <div class="form-group bmd-form-group">  
-                <%= f.label :votre_nom, class: "bmd-label-floating" %></br>
-                <%= f.text_field  :name, required: true, class: "form-control success" %></br>
+              <div class="form-group">  
+                <%= f.label :nom, class: "bmd-label-floating" %></br>
+                <%= f.text_field :name, required: true, class: "form-control success" %></br>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="form-group bmd-form-group">  
-              <%= f.label :votre_adresse_mail, class: "bmd-label-floating"  %></br>
+              <div class="form-group">  
+              <%= f.label :entreprise, class: "bmd-label-floating"  %></br>
+              <%= f.text_field :company, class: "form-control form-control-success" %></br>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">  
+                <%= f.label :téléphone, class: "bmd-label-floating" %></br>
+                <%= f.text_field :number, class: "form-control success" %></br>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">  
+              <%= f.label :adresse_email, class: "bmd-label-floating"  %></br>
               <%= f.text_field :email, required: true, class: "form-control form-control-success" %></br>
               </div>
             </div>
           </div>
-          <div class="form-group bmd-form-group">
-              <%= f.label :votre_message, class: "bmd-label-floating" %></br>
-              <%= f.text_area :message, rows: 2, cols: 30, required: true, class: "form-control"%></br>
-          </div>
-          <div class="row">
-            <div class="col-md-4 ml-auto mr-auto text-center">
-              <%= f.submit 'Envoyer un message', class: 'btn btn-success' %>
+            <div class="form-group">
+                <%= f.label :votre_message, class: "bmd-label-floating" %></br>
+                <%= f.text_area :message, rows: 2, cols: 30, required: true, class: "form-control"%></br>
+            </div>
+    </div>
+          <div class="row col-md-12 text-center">
+            <div class="col-md-6 ml-auto mr-auto text-center">
+              <%= f.submit 'Envoyer un message', class: 'btn btn-lg btn-block btn-success' %>
             </div>
           </div>
         <% end %>
-    </div>
   </div>
 </div>
