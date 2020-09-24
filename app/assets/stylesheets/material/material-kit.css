@@ -17054,6 +17054,7 @@ footer .pull-center {
 .card.no-shadow .card-header-image,
 .card.no-shadow .card-header-image img {
   box-shadow: none !important;
+  
 }
 
 .card .card-body,
@@ -17108,7 +17109,7 @@ footer .pull-center {
   margin-right: 15px;
   margin-top: -30px;
   border: 0;
-  background: linear-gradient(60deg, #eee, #bdbdbd);
+  background: rgba(0,0,0,.00);
 }
 
 .card .card-header .title {

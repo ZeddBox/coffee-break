@@ -18,6 +18,22 @@
   left: 0;
 }
 
+.background-image-about {
+
+  // background-image: url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png');
+  background: -moz-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -webkit-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -webkit-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -o-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: -ms-linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  background: linear-gradient(90deg, rgba(63, 63, 63, 0.800) 0, rgba(255, 255, 255, 0) 100%), url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600877611/jumbotron-coffee_zn6xti.png') no-repeat;
+  width: 100%;
+  position: fixed ;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .website-title {
   font-family: 'Righteous', cursive;
   text-align: center;
@@ -82,4 +98,11 @@
   padding-right: 0.9375rem;
   font-size: 24px !important;
   color: #522f1f !important;
+}
+
+.vcenter{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  max-width: 49%;
 }
