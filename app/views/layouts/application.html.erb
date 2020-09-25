@@ -21,12 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" %>
-    <!-- Leaflet map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <!-- Mapbox -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 
   </head>
 
@@ -39,52 +33,51 @@
 
     <%= yield %>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
     if(window.location.href.indexOf("propos") != -1) {
-        $(".navbar").addClass("bg-light");
-        $(".navbar").removeClass("navbar-transparent");
-        $(".navbar").removeClass("navbarhidden");
-        setTimeout(function () {
-          $(".navbar").removeClass('navbarvisuallyhidden');
-        }, 20);
-        $(".navbar-brand").css("display", "");
-    }
-    else {
-      $(document).ready(function() {
+  $(".navbar").addClass("bg-light");
+  $(".navbar").removeClass("navbar-transparent");
+  $(".navbar").removeClass("navbarhidden");
+  setTimeout(function () {
+    $(".navbar").removeClass('navbarvisuallyhidden');
+  }, 20);
+  $(".navbar-brand").css("display", "");
+}
+else {
+$(document).ready(function() {
 
 
-      $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
 
-        //>=, not <=
-        if (scroll >= 300) {
-            //clearHeader, not clearheader - caps H
-            $(".navbar").addClass("bg-light");
-            $(".navbar").removeClass("navbar-transparent");
-            $(".navbar").removeClass("navbarhidden");
-            setTimeout(function () {
-              $(".navbar").removeClass('navbarvisuallyhidden');
-            }, 20);
-            $(".navbar-brand").css("display", "");
+  //>=, not <=
+  if (scroll >= 300) {
+      //clearHeader, not clearheader - caps H
+      $(".navbar").addClass("bg-light");
+      $(".navbar").removeClass("navbar-transparent");
+      $(".navbar").removeClass("navbarhidden");
+      setTimeout(function () {
+        $(".navbar").removeClass('navbarvisuallyhidden');
+      }, 20);
+      $(".navbar-brand").css("display", "");
 
-        } else {
-          $(".navbar").removeClass("bg-light");
-          $(".navbar").addClass("navbar-transparent");
-          $(".navbar").addClass("navbarhidden");
-          $(".navbar").addClass("navbarvisuallyhidden");
-          $(".navbar-brand").css("display", "none");
-        }
-      }); //missing;
+  } else {
+    $(".navbar").removeClass("bg-light");
+    $(".navbar").addClass("navbar-transparent");
+    $(".navbar").addClass("navbarhidden");
+    $(".navbar").addClass("navbarvisuallyhidden");
+    $(".navbar-brand").css("display", "none");
+  }
+}); //missing;
 
-      // document ready  
-      });
-    }
-    
-</script>
+// document ready  
+});
+}
+  </script>
 
+  
   </body>
 </html>
