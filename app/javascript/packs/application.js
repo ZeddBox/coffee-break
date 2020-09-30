@@ -9,13 +9,7 @@ require("@rails/activestorage").start()
 require("channels/consumer.js")
 require("channels/index.js")
 require("channels/jumbotron.js")
-require("packs/material/core/jquery.min.js")
-require("packs/material/core/popper.min.js")
 require("packs/material/material-kit.js")
-require("packs/material/core/bootstrap-material-design.js")
-require("packs/material/plugins/bootstrap-datetimepicker.js")
-require("packs/material/plugins/moment.min.js")
-require("packs/material/plugins/nouislider.min.js")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
