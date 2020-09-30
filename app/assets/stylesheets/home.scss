@@ -113,3 +113,17 @@
   // background-image: url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600980537/coffee-bag-bg2-beige2_fomzap.jpg');
   // background-image: url('https://res.cloudinary.com/coffeebreak-pro/image/upload/v1600984571/coffee-bag-bg3-beige2_nk3iev.jpg');
 }
+
+.fa-linkedin {
+  color: #868686;
+  transition: 0.3s
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+  animation: bounce 0.7s ease infinite
+}
+
+.btn-brown {
+  background-color: #2098D1;
+}
